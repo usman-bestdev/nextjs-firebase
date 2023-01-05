@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useProvideAuth } from "./auth-methods/basic-auth";
+import { useProvideAuth } from "./auth-methods/firabase-auth";
 type children = {
   children: JSX.Element | JSX.Element["props"];
 };

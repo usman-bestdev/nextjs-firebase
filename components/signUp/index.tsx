@@ -12,7 +12,7 @@ import { Alert } from "@material-ui/lab";
 const openAlertType: Color = "warning";
 
 function SignUp() {
-  const { userSignUp, signupErrors, setSignupErrors }: any = useAuth();
+  const { userSignup, signupErrors, setSignupErrors }: any = useAuth();
   const classes = useStyle();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -48,7 +48,7 @@ function SignUp() {
       !errPassword.isValid &&
       !errUsername.isValid
     ) {
-      userSignUp(username, email, password);
+      userSignup(username, email, password);
     }
   }
 

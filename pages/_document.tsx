@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
             name="theme-color"
             content={defaultTheme.palette.primary.main}
           />
-          <link rel="shortcut icon" href="/duplocloud-favIcon.jpeg" />
+          {/* <link rel="shortcut icon" href="/duplocloud-favIcon.jpeg" /> */}
           <meta
             name="keywords"
             content="Responsive, HTML5, admin theme, business, professional, React, web design, CSS3, JSS"
@@ -30,15 +30,9 @@ export default class MyDocument extends Document {
             property="og:description"
             content="Web site created using create-react-appn"
           />
-          <meta
-            property="og:title"
-            content="DevOps - Smart Solutions For Web"
-          />
+          <meta property="og:title" content="firebase integration" />
           <meta property="og:image" content="/logo512.png" />
-          <meta
-            property="og:site_name"
-            content="DevOps - Smart Solutions For Web"
-          />
+          <meta property="og:site_name" content="firebase integration" />
           <meta name="keywords" content="react,react-component,stickies" />
           <meta name="twitter:card" content="summary" />
           <meta

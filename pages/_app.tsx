@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>DevOps. One Stop Smart Solution</title>
+        <title>firebase integration</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

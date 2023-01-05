@@ -1,20 +1,20 @@
-import TopNavBar from "../components/TopNavBar";
-import Footer from "../components/Footer";
-import HomeBanner from "../components/HomeBanner";
-import HomeCardSession from "../components/HomeCardSection";
 import SecurePage from "../authentication/auth-page-wrappers/SecurePage";
+import { useAuth } from "../authentication";
 
 const Home = () => {
+  const { userSignOut }: any = useAuth();
   return (
     <>
       <SecurePage>
-        <TopNavBar />
+        <p>You are logged in.... </p>
 
-        <HomeBanner />
-
-        <HomeCardSession />
-
-        <Footer />
+        <button
+          onClick={() => {
+            userSignOut();
+          }}
+        >
+          Sign out
+        </button>
       </SecurePage>
     </>
   );
